@@ -22,3 +22,4 @@ find services, Indigenous-owned businesses, and community events in one place.
 
 ## Status
 Project setup phase.
+Frontend work has begun
