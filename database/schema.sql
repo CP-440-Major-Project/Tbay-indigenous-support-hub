@@ -30,3 +30,44 @@ CREATE TABLE Businesses (
 		FOREIGN KEY (OwnerUserId) REFERENCES Users(UserId)
 
 );
+
+-- Services Table
+
+CREATE TABLE Services (
+	ServiceId INT IDENTITY(1,1) PRIMARY KEY,
+	ServiceName NVARCHAR(150) NOT NULL,
+	Category NVARCHAR(100),
+	Description NVARCHAR(500),
+	ContactInfo NVARCHAR(255),
+	Location NVARCHAR(255),
+	IsActive BIT NOT NULL DEFAULT 1,
+	CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+
+);
+
+--Events Table
+
+CREATE TABLE Events (
+	EventId INT IDENTITY(1,1) PRIMARY KEY,
+	EventTitle NVARCHAR(150) NOT NULL,
+	EventType NVARCHAR(100),
+	Description NVARCHAR(500),
+	EventDate DATETIME NOT NULL,
+	Location NVARCHAR(255),
+	CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+
+);
+
+-- OTP Requests Table
+--A foreign key enforces a relationship between tables and ensures that values in one table must exist in another related table
+CREATE TABLE OTPRequests (
+	OTPId INT IDENTITY(1,1) PRIMARY KEY,
+    UserId INT NOT NULL,
+    OTPCode NVARCHAR(10) NOT NULL,
+    ExpiryTime DATETIME NOT NULL,
+    IsUsed BIT NOT NULL DEFAULT 0,
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE(),
+	CONSTRAINT FK_OTPRequests_Users
+		FOREIGN KEY (UserId) REFERENCES Users(UserId) 
+	
+);
