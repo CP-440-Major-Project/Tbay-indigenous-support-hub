@@ -2,6 +2,14 @@
 
 --Users Table
 
+
+CREATE DATABASE TbayIndigenousSupportHub;
+GO
+
+USE TbayIndigenousSupportHub;
+GO
+
+
 CREATE TABLE Users(
 	UserId INT IDENTITY(1,1) PRIMARY KEY,
 	FullName NVARCHAR(100) NOT NULL,
