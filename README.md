@@ -1,3 +1,8 @@
+![Thunder Bay Indigenous Support Hub Logo](assets/logo/logo-thunder-bay-indigenous-support-hub.png)
+
+
+
+
 # Tbay Indigenous Support Hub
 
 CP440 – Major Project
@@ -22,3 +27,4 @@ find services, Indigenous-owned businesses, and community events in one place.
 
 ## Status
 Project setup phase.
+Frontend work has begun
