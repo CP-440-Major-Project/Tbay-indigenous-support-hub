@@ -1,4 +1,5 @@
-![Thunder Bay Indigenous Support Hub Logo](assets/logo/logo.png)
+![Thunder Bay Indigenous Support Hub Logo](assets/logo/logo-thunder-bay-indigenous-support-hub.png)
+
 
 
 
