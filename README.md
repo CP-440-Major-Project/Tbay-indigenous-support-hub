@@ -1,3 +1,7 @@
+![Thunder Bay Indigenous Support Hub Logo](assets/logo/logo.png)
+
+
+
 # Tbay Indigenous Support Hub
 
 CP440 – Major Project
